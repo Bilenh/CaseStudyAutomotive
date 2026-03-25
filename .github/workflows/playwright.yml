@@ -13,6 +13,7 @@ jobs:
       # Required by tests (set these in repo Settings → Secrets and variables → Actions):
       TEST_USER_EMAIL: ${{ secrets.TEST_USER_EMAIL }}
       TEST_USER_PASSWORD: ${{ secrets.TEST_USER_PASSWORD }}
+      BASE_URL: ${{ secrets.BASE_URL }}
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
